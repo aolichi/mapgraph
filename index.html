@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <h2 id="title" x="350" y="30">Education in USA</h2>
+        <div id = description> Percentage of people with bachelors and higher </div>
+        <div id = "flexcontainer">
+        <div id = "rightside">
+        
+        <div id="tooltip">
+            
+        </div>
+        <svg id="legend">
+            <g>
+                <rect x = "10" y = "10" width = "40" height = "40" fill = "#EDBB99"> </rect>
+                <text x = "10" y = "90">0 - 15%</text>
+              </g>
+              <g>
+              <rect x = "90" y = "10" width = "40" height = "40" fill = "#F9E79F"> </rect>
+                <text x = "90" y = "90"> 15% - 25%</text>
+              </g>
+               <rect x = "170" y = "10" width = "40" height = "40" fill = "lightgreen"> </rect>
+              <text x = "170" y = "90">25% - 45%</text>
+              <g>
+              <rect x = "250" y = "10" width = "40" height = "40" fill = "#A3E4D7"> </rect>
+                <text x = "250" y = "90">45%+</text>
+              </g>
+          </svg>
+        </div>
+        <div id="leftside">
+        <svg id ="canvas"></svg>
+    </div>
+  </div>
+</body>
+<script defer src="script.js"></script>
+<script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
